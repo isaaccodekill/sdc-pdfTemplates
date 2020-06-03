@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packing slip</title>
+</head>
+<body>
+    <style>
+        *,*::after,*::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 10px;
+            color: #102a43;
+            font-family:'Inter', sans-serif;
+        }
+        .pageContainer{
+            width: 100%;
+            padding: 25px;
+        }
+        .logoContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        .flexGroupMain{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .leftContentText{
+            max-width: 300px;
+            display: block;
+        }
+
+        .leftContent span{
+            display: block;
+            line-height: 16px;
+            margin-bottom: 4px;
+        }
+
+        .leftContent h2{
+            font-size: 12px;
+            font-weight: 500px;
+        }
+        .flexGroupMain .rightContent{
+            width: 300px;
+        }
+        .flexMiniGroup{
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 4px;
+        }
+        .alignLeft{
+            margin-right: 30px;
+            text-align: right;
+            width: 100px;
+        }
+        .block span{
+            display: block;
+            margin-bottom: 4px;
+        }
+        .tableContainer{
+            display: table;
+            width: 100%;
+        }
+        .totalCount{
+            margin-top: 30px;
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* align-items: flex-start; */
+        }
+        .lightGrey{
+            color: #486581;
+            text-transform: capitalize;
+            font-size: 10px;
+        }
+        .total{
+            font-size: 13px;
+            font-weight: 500px;
+        }
+        .boldText{
+            font-weight: 600px;
+        }
+    </style>
+    <div class="pageContainer">
+        <div class="logoContainer">
+            <img src="https://firebasestorage.googleapis.com/v0/b/vendors-265809.appspot.com/o/Email%20Template%20Images%2FsdcLogo%201.png?alt=media&token=18d8d3ce-3179-4470-943f-dee11800c39a" alt="Logo">
+            <div class="logoText">
+                <p>
+                    <span class="">
+                        Design Online. 
+                    </span>
+                     pickup sameday
+                </p>
+            </div>
+        </div>
+        <div class="flexGroupMain">
+            <div class="leftContent">
+                <!-- store name -->
+                <h2>SameDayCustom</h2>
+                <!-- store address -->
+                <span class="leftContentText" >
+                    102 Monroeville Mall, Monroeville, Pennysylvania 15146, United States.
+                </span>
+                <!-- shop email -->
+                <span>
+                    www.samedaycustom.com
+                </span>
+            </div>
+            <div class="rightContent">
+                <div class="flexMiniGroup">
+                    <span class="boldText alignLeft">Order Number</span>
+                    <span class="boldText alignRight"> SDCQWERT21  </span>
+                </div>
+                <div class="flexMiniGroup">
+                    <span class="lightGrey alignLeft"> Order Date </span>
+                    <span class="alignRight"> 13 April, 2020 </span>
+                </div>
+                <div class="flexMiniGroup">
+                    <span class="lightGrey alignLeft"> Delivery Date </span>
+                    <span class="alignRight"> 14 April, 2020 </span>
+                </div>
+                <div class="flexMiniGroup">
+                    <span class="lightGrey alignLeft"> Fulfilment Center </span>
+                    <span class="alignRight"> Riverside Mall </span>
+                </div>
+                <div class="flexMiniGroup">
+                    <span class="lightGrey alignLeft"> Delivery Method </span>
+                    <span class="alignRight"> Pickup from Riverside Mall </span>
+                </div>
+                <div class="flexMiniGroup">
+                    <span class="lightGrey alignLeft"> Tracking Number </span>
+                    <span class="alignRight"> N/A </span>
+                </div>
+            </div>
+        </div>
+        <div class="flexGroupMain">
+            <div class="leftContent">
+                <!-- customers name -->
+                <span class="thickHeading"> Billing Address </span>
+                <span> Isabela mendez</span>
+                <span>
+                    4310 amelia avenue lyons, il , Illinois United States 60534 
+                </address>
+                <!-- phone number -->
+                <span>7085491407</span>
+                <!-- email address -->
+                <span> men507116@gmail.com </span>
+            </div>
+            <div class="rightContent block">
+                <span class="sectionHeading">
+                    Shipping Address
+                </span>
+                <!-- shipping address name -->
+                <span>
+                    Isabel Mendez
+                </span>
+                <span>
+                    4310 amelia avenue lyons, il , Illinois United States 60534.
+                </span>
+            </div>
+        </div>
+        <div class="tableContainer">
+            <table width="100%" align="left" border="0" cellspacing="0" bgcolor="#fff">
+                <thead align="left" style="height: 32px;">
+                    <tr style="background-color: #F0F4F8">
+                        <td style="padding: 10px 20px 10px 20px; text-transform: capitalize;
+                                   color: #486581; font-size: 10px; font-weight:500;" width="45%">
+                            item
+                        </td>
+                        <td style="padding: 10px 20px 10px 20px; text-transform: capitalize;
+                        color: #486581; font-size: 10px; font-weight:500;" width="10%">
+                            color
+                        </td>
+                        <td style="padding: 10px 20px 10px 20px; text-transform: capitalize;
+                        color: #486581; font-size: 10px; font-weight:500;"
+                        width="25%">
+                            Size/Quantity
+                        </td>
+                        <td
+                        style="padding: 10px 20px 10px 20px; text-transform: capitalize;
+                                   color: #486581; font-size: 10px; font-weight:500; " 
+                        width="20%">
+                            Total Quantity
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       <td width="45%" style="padding: 20px 20px 20px 20px; text-transform: capitalize;
+                       color: #102a43; font-size: 10px; font-weight:500;border-bottom: 1px solid #D9E2EC;vertical-align: top;">
+                           <!-- the order number -->
+                           <h3 style="margin: 0px 0px; font-weight: 500px; color: #102a43;font-size: 10px;"> 2681032572 </h3>
+                           <p>
+                            Gildan unisex ultra cotton T- shirt
+                           </p>
+                       </td>
+                       <td width="10%" style="padding: 20px 20px 20px 20px; text-transform: capitalize;
+                       color: #102a43; font-size: 10px; font-weight:500;border-bottom: 1px solid #D9E2EC;vertical-align: top;">
+                           <!-- add the color of the tshirt here -->
+                           <div 
+                              style="height: 20px; width: 20px; border-radius: 50%; background-color: green;"
+                            >
+                           </div>
+                       </td>
+                       <td width="25%" style="padding: 20px 20px 20px 20px; text-transform: capitalize;
+                       color: #102a43; font-size: 10px; font-weight:500;border-bottom: 1px solid #D9E2EC;vertical-align: top;">
+                            <span>
+                                M x 4, L x 3, XL x 2
+                            </span>
+                        </td>
+                        <td width="20%" style="padding: 20px 20px 20px 20px; text-transform: capitalize;
+                        color: #102a43; font-size: 10px; font-weight:500;border-bottom: 1px solid #D9E2EC;vertical-align: top;">
+                            <span>
+                                9
+                            </span>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #D9E2EC;">
+                        <td width="45%" style="padding: 20px 20px 20px 20px; text-transform: capitalize;
+                        color: #102a43; font-size: 10px; font-weight:500;border-bottom: 1px solid #D9E2EC;vertical-align: top;">
+                            <!-- the order number -->
+                            <h3 style="margin: 0px 0px; font-weight: 500px; color: #102a43;font-size: 10px;"> 2681032572 </h3>
+                            <p>
+                             Gildan unisex ultra cotton T- shirt
+                            </p>
+                        </td>
+                        <td width="10%" style="padding: 20px 20px 20px 20px; text-transform: capitalize;
+                        color: #102a43; font-size: 10px; font-weight:500;border-bottom: 1px solid #D9E2EC;vertical-align: top;">
+                            <!-- add the color of the tshirt here -->
+                            <div 
+                               style="height: 20px; width: 20px; border-radius: 50%; background-color: purple;"
+                             >
+                            </div>
+                        </td>
+                        <td width="25%" style="padding: 20px 20px 20px 20px; text-transform: capitalize;
+                        color: #102a43; font-size: 10px; font-weight:500;border-bottom: 1px solid #D9E2EC;vertical-align: top;">
+                             <span>
+                                 M x 4, L x 3, XL x 2
+                             </span>
+                         </td>
+                         <td width="20%" style="padding: 20px 20px 20px 20px; text-transform: capitalize;
+                         color: #102a43; font-size: 10px; font-weight:500;border-bottom: 1px solid #D9E2EC;vertical-align: top;">
+                             <span>
+                                 9
+                             </span>
+                         </td>
+                     </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="totalCount">
+            <h2 class="lightGrey"> Total Quantity </h2>
+            <h1 class="Total"> 18 </h1>
+        </div>
+    </div>
+</body>
+</html>
